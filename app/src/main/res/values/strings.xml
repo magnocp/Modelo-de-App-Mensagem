@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Modelo</string>
+    <string name="item_settings">Configurações</string>
+    <string name="item_sair">Sair</string>
+    <string name="item_pesquisa">Pesquisar</string>
+    <string name="item_adicionar">Adicionar</string>
+
+
+</resources>
