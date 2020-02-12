@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+import com.example.teste1.fragmentos.ContatosFragment;
 import com.example.teste1.fragmentos.ConversasFragment;
 
 public class TabAdapter extends FragmentStatePagerAdapter {
@@ -24,7 +25,7 @@ public class TabAdapter extends FragmentStatePagerAdapter {
                 fragmento = new ConversasFragment();
                 break;
             case 1:
-                fragmento = new ConversasFragment();
+                fragmento = new ContatosFragment();
                 break;
         }
 

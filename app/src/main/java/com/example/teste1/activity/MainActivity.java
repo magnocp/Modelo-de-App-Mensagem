@@ -22,9 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private SlidingTabLayout alinhaAbas;
     private ViewPager viewPager;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
         //configurando adapter
         TabAdapter tabAdapter = new TabAdapter(getSupportFragmentManager());
         viewPager.setAdapter(tabAdapter);
-
-
 
         alinhaAbas.setViewPager(viewPager);
 
