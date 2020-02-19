@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.teste1.R;
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
@@ -43,8 +44,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                // mudando de tela
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                if( nome.getText().toString().equals("") || codPais.getText().toString().equals("") || telefone.getText().toString().equals("")){
+                    Toast.makeText(LoginActivity.this, "Por favor Digite todos os campos para prosseguir!", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    // mudando de tela
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                }
 
             }
         });
